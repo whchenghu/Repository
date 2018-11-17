@@ -6,3 +6,4 @@
 	echo "第三次提交内容了，这次是用submit text3来编辑的";
 	echo "第4次提交内容了，这次是用submit text3来编辑的";
 	echo "第5次提交内容了，这次是用submit text3来编辑的";
+	echo "rich de 内容哦"
