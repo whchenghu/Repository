@@ -3,3 +3,4 @@
 	echo "这是我通过git工具来添加的文件";
 	echo "<br>";
 	echo "第二次提交了";
+	echo "第三次提交内容了，这次是用submit text3来编辑的";
