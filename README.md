@@ -1,6 +1,6 @@
 # Repository
 
-@(平时练习的code)[测试1|测试2]
+@(平时练习的code)
 
 ## 我要修改你 
 
@@ -13,3 +13,13 @@
   }
 ```
 
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
