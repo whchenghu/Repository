@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<script>
+    //function hd() {
+    //    var names = pp("names");
+    //    var sex = pp("sex");
+    //    document.getElementById("result").innerHTML = "名字是："+names + sex;
+    //}
+    //function pp(ss) {
+    //    return document.getElementById(ss).value;
+    //}
+
+   /* var name = new Object();
+    name.name = "hahah";
+    name.kill = function () {
+        document.write(name.name + "正在。。。");
+    }
+    name.kill();*/
+
+
+    /*function test(name) {
+        this.name = name;
+        this.kill = function () {
+            document.write(this.name + "在空间的回复");
+        }
+    }
+    var tt = new test("abc");
+    tt.kill();*/
+    //document.write(screen.width + "*" + screen.height);
+   // document.write("<br>" + screen.availWidth + "*" + screen.availHeight)
+    function fun() {
+        try {
+            document.write(new Date().toLocaleString());
+        } catch (err) {
+            alert(err);
+        }     
+    }
+    document.write(new Date());
+    function func() {
+        //location.href="http://www.baidu.com"
+        //document.getElementById("time").innerHTML = "<h1>" + new Date().LocaleString() + "</h1>";
+        location.reload();//刷新当前页面
+    }
+</script>
+<body>
+    <!--name:<input type="text" id="names"/><br>
+    sex:<input type="text" id="sex"/><br>
+<textarea cols="50" rows="4" id="result"></textarea>
+        <input type="button"  value="生成" onclick="hd()"/>-->
+    <div id="time">时间</div>
+    <input type="button"  name="name" value="点击测试" onclick="fun()"/>
+    <button onclick="func()">ggggggg</button>
+
+</body>
+</html>

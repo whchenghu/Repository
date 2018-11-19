@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="this.innerHTML=new Date()">点击</button>
+    <script>
+        //let a = 100;
+        //function abc() {
+        //     a = 0;
+        //    alert("内部：" + a);
+        //}
+        //alert("外部" + a);
+        //abc();
+        //document.write(new Date().toString());
+
+
+
+        try {
+            var str = "abcdefghighjklmnop";
+            document.write(str.search("c"));
+            document.write("<br>" + str.replace(/a/, "v"));
+            document.write("<br>" + str);
+            document.write("<br>" + /ff/.test("this is ffo"));
+            document.write("<br>" + /ff/.exec("this is ffo"));
+
+        } catch (err) {
+            alert(err.innHTML = "错误：" + err.message);
+        }
+        function gt() {
+            var strr = document.getElementById("a").value;
+            document.getElementById("b").value = strr;
+        }
+        try {
+            function num() {
+                var first = pa("first");
+                var second = pa("second")
+                var result = first + second;
+                document.getElementById("result").value = result;
+            }
+            function pa(id) {
+                return parseInt(document.getElementById(id).value);
+            }
+        } catch (err) {
+            alert(err.message)
+        }
+    </script>
+    <!--<input type="text" id="a" value="" />
+    <input type="text" id="b" value="" />
+    <input type="button" id="c" value="点击" onclick="gt()"/>
+    <input type="text" name="name" value="测试文字" disabled="disabled" />-->
+    <hr>
+    <input type="text" id="first" value="" /><br>
+    <input type="text" id="second" value="" /><br>
+    <input type="text" id="result" value="" /><br>
+    <input type="button" id="anjian" value="点击计算"  onclick="num()"/><br>
+
+</body>
+</html>
+
+
